@@ -1,3 +1,7 @@
+.loadingText {
+  font-size: 3.2rem;
+}
+
 .countryDetailsContainer {
   display: flex;
   align-items: center;

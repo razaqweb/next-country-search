@@ -10,7 +10,10 @@ const Nav = () => {
         </Link>
 
         <li>
-          <a href="https://github.com/razaqweb/country-search" target="_blank">
+          <a
+            href="https://github.com/razaqweb/next-country-search"
+            target="_blank"
+          >
             Github
           </a>
         </li>
