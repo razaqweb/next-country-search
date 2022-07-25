@@ -36,7 +36,7 @@
 @media (max-width: 500px) {
   .listItems {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
     gap: 1.4rem;
   }
 
