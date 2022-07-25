@@ -1,0 +1,23 @@
+.textContainer {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.heading {
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+
+.description {
+  font-size: 2rem;
+}
+
+@media (max-width: 428px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+}

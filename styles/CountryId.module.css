@@ -1,0 +1,42 @@
+.countryDetailsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 2.4rem 1.2rem;
+  background-color: #efefef;
+  color: #222;
+}
+
+.imgContainer {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.flagImg {
+  width: 50%;
+}
+
+.listItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-left: 0;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 428px) {
+  .listItems {
+    text-align: center;
+    font-size: 1.4rem;
+    gap: 1.4rem;
+  }
+
+  .countryDetailsContainer {
+    width: 25rem;
+  }
+}
