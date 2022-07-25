@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         <title>Country Search</title>
       </Head>
       <Nav />
-      <main className={styles.container}>{children}</main>;
+      <main className={styles.container}>{children}</main>
     </Fragment>
   );
 };

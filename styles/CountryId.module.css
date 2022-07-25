@@ -19,7 +19,7 @@
 }
 
 .flagImg {
-  width: 50%;
+  max-width: 80%;
 }
 
 .listItems {
@@ -33,14 +33,18 @@
   font-size: 2.4rem;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 500px) {
   .listItems {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
     gap: 1.4rem;
   }
 
+  .flagImg {
+    max-width: 100%;
+  }
+
   .countryDetailsContainer {
-    width: 25rem;
+    padding: 1.2rem;
   }
 }

@@ -41,6 +41,11 @@ const Country = ({ country }) => {
         <li>Official Name: {official}</li>
         <li>Continent: {continent}</li>
         <li>Capital City: {capital}</li>
+        <li>
+          Sub-Region:{" "}
+          {countryData.subregion ? countryData.subregion : "No data found"}
+        </li>
+        <li>Population: {countryData.population}</li>
         <li>Languages: {languages}</li>
         <li>
           Official Currency: {currency.symbol} &mdash; {currency.name}

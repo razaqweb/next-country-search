@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 4.8rem;
-  text-align: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .countryItem:link {
@@ -23,14 +24,15 @@
   margin-bottom: 4.4rem;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 500px) {
   .countryListText {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .countryListContainer {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.2rem;
+    text-align: center;
   }
 
   .countryItem:link {
