@@ -26,7 +26,7 @@
 
 @media (max-width: 500px) {
   .countryListText {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .countryListContainer {
@@ -36,6 +36,6 @@
   }
 
   .countryItem:link {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
