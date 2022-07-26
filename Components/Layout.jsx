@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
         />
         <meta name="twitter:card" content="summary_large_image"></meta>
         <title>Country Search</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Nav />
       <main className={styles.container}>{children}</main>
