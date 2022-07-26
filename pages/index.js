@@ -12,11 +12,18 @@ export default function Home({ countries }) {
 
   useEffect(() => {
     setCountryList(
-      countries.filter((country) =>
-        country.name
-          .toLocaleLowerCase()
-          .includes(searchValue.toLocaleLowerCase())
-      )
+      countries.filter((country) => {
+        const [countryLang] = country.languages;
+
+        return (
+          country.name
+            .toLocaleLowerCase()
+            .includes(searchValue.toLocaleLowerCase()) ||
+          countryLang.name
+            .toLocaleLowerCase()
+            .includes(searchValue.toLocaleLowerCase())
+        );
+      })
     );
   }, [searchValue]);
 

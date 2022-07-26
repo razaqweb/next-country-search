@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Fragment } from "react";
 
 const CountryList = ({ countries, searchValue, countryList }) => {
+  const localSearchValue = searchValue.toLocaleLowerCase();
+
   return (
     <Fragment>
       <p className={styles.countryListText}>
@@ -12,11 +14,17 @@ const CountryList = ({ countries, searchValue, countryList }) => {
       </p>
       <div className={styles.countryListContainer}>
         {countries
-          .filter((country) =>
-            country.name
+          .filter((country) => {
+            const [languageData] = country.languages;
+            const filterName = country.name
               .toLocaleLowerCase()
-              .includes(searchValue.toLocaleLowerCase())
-          )
+              .includes(localSearchValue);
+            const filterLang = languageData.name
+              .toLocaleLowerCase()
+              .includes(localSearchValue);
+
+            return filterName || filterLang;
+          })
           .map((country) => (
             <div key={country.name} className={styles.countryItemContainer}>
               <Link href={`/${country.alpha3Code.toLocaleLowerCase()}`}>

@@ -6,7 +6,7 @@ const SearchBox = ({ value, onChange }) => {
     <form className={styles.searchForm}>
       <input
         type="text"
-        placeholder="Search countries..."
+        placeholder="Search countries or languages..."
         value={value}
         onChange={onChange}
         className={styles.inputBar}
