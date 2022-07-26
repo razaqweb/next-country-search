@@ -6,15 +6,25 @@ const Nav = () => {
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <Link href="/">
-          <li>Home</li>
+          <a className={styles.navLink}>Home</a>
         </Link>
 
         <li>
           <a
             href="https://github.com/razaqweb/next-country-search"
             target="_blank"
+            className={styles.navLink}
           >
-            Github
+            Code
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://razaqweb.github.io/"
+            target="_blank"
+            className={styles.navLink}
+          >
+            razaqweb.github.io
           </a>
         </li>
       </ul>
